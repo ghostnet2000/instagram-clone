@@ -2,7 +2,7 @@ from kivymd.uix.screen import MDScreen
 
 
 import json
-#from libs.components.post_card import PostCard
+from libs.components.post_card import PostCard
 
 from libs.components.circular_avatar_image import CircularAvatarImage
 
@@ -12,7 +12,7 @@ class HomePage(MDScreen):
 
     def on_enter(self):
         self.list_stories()
-        #self.list_posts()
+        self.list_posts()
 
     def list_stories(self):
         print("-------------------------->")
